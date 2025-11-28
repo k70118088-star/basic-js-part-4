@@ -4,100 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accordian</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="src/output.css">
 
+    <style>
+        .arrow-icon {
+            transition: transform 0.3s ease;
+        }
+
+        /* JS will add 'rotate-180' class, which Tailwind handles, but we need the smooth transition */
+    </style>
 </head>
 
-<body>
+<body class="bg-[#F6F6F6] font-sans pt-20">
 
-    <h1>Accordian</h1>
+    <h1 class="text-center mt-10 font-semibold text-gray-600 text-2xl">Accordion</h1>
 
-    <div class="main-card">
-        <div class="accordion" id="accordionExample">
+    <div class="max-w-[550px] mx-auto mt-20 bg-white p-6 rounded-xl shadow-[0_11px_44px_-10px_rgba(0,0,0,0.25)]">
+        <div class="accordion">
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
-                        Group-1
-                    </button>
-                </h2>
-                <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh <br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc. Nibh<br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc.
-                    </div>
+            <div class="accordion-item mb-3">
+                <button
+                    class="accordion-button w-full flex justify-between items-center text-left bg-white border border-gray-200 rounded-lg p-4 text-sm text-gray-600 hover:border-gray-300">
+                    Group-1
+                    <svg class="arrow-icon w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div
+                    class="accordion-body p-4 pt-2 text-gray-600 text-sm border-x border-b border-gray-200 rounded-b-lg hidden">
+                    Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit
+                    at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+                <button
+                    class="accordion-button w-full flex justify-between items-center text-left bg-white border border-gray-200 rounded-lg p-4 text-sm text-gray-600 hover:border-gray-300">
+                    Group-1
+                    <svg class="arrow-icon w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div
+                    class="accordion-body p-4 pt-2 text-gray-600 text-sm border-x border-b border-gray-200 rounded-b-lg hidden">
+                    Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit
+                    at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+                <button
+                    class="accordion-button w-full flex justify-between items-center text-left bg-white border border-gray-200 rounded-lg p-4 text-sm text-gray-600 hover:border-gray-300">
+                    Group-1
+                    <svg class="arrow-icon w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div
+                    class="accordion-body p-4 pt-2 text-gray-600 text-sm border-x border-b border-gray-200 rounded-b-lg hidden">
+                    Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit
+                    at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
+                </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+                <button
+                    class="accordion-button w-full flex justify-between items-center text-left bg-white border border-gray-200 rounded-lg p-4 text-sm text-gray-600 hover:border-gray-300">
+                    Group-1
+                    <svg class="arrow-icon w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div
+                    class="accordion-body p-4 pt-2 text-gray-600 text-sm border-x border-b border-gray-200 rounded-b-lg hidden">
+                    Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit
+                    at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
                 </div>
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#a2">
-                        Group-1
-                    </button>
-                </h2>
-                <div id="a2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh <br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc. Nibh<br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc.
-                    </div>
+                <button
+                    class="accordion-button w-full flex justify-between items-center text-left bg-white border border-gray-200 rounded-lg p-4 text-sm text-gray-600 hover:border-gray-300">
+                    Group-1
+                    <svg class="arrow-icon w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div
+                    class="accordion-body p-4 pt-2 text-gray-600 text-sm border-x border-b border-gray-200 rounded-b-lg hidden">
+                    Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit
+                    at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
                 </div>
             </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#a3">
-                        Group-1
-                    </button>
-                </h2>
-                <div id="a3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh <br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc. Nibh<br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#a4">
-                        Group-1
-                    </button>
-                </h2>
-                <div id="a4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh <br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc. Nibh<br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#a5">
-                        Group-1
-                    </button>
-                </h2>
-                <div id="a5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh<br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc. Nibh<br>
-                        dictum nulla morbi ornare. Varius sit at eget nunc.
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const accordionButtons = document.querySelectorAll(".accordion-button");
+
+        accordionButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const item = button.closest(".accordion-item");
+                const body = button.nextElementSibling;
+                const icon = button.querySelector(".arrow-icon");
+                const isCurrentlyActive = item.classList.contains("active");
+
+                document.querySelectorAll(".accordion-item").forEach(i => {
+                    const bodyToClose = i.querySelector(".accordion-body");
+                    const btnToClose = i.querySelector(".accordion-button");
+                    const iconToClose = i.querySelector(".arrow-icon");
+
+                    i.classList.remove("active");
+                    i.classList.add("mb-3");
+
+                    btnToClose.classList.remove("font-semibold", "text-gray-700", "rounded-b-none", "border-b-0");
+                    btnToClose.classList.add("text-gray-600", "rounded-lg", "border-b");
+
+                    if (bodyToClose) bodyToClose.classList.add("hidden");
+                    if (iconToClose) iconToClose.classList.remove("rotate-180");
+                });
+
+                if (!isCurrentlyActive) {
+                    item.classList.add("active");
+                    item.classList.remove("mb-3");
+                    button.classList.add("font-semibold", "text-gray-700", "rounded-t-lg", "border-b-0");
+                    button.classList.remove("rounded-lg", "text-gray-600", "border-b");
+                    body.classList.remove("hidden");
+                    icon.classList.add("rotate-180");
+                }
+            });
+        });
+
+        const firstItem = document.querySelector(".accordion-item.active");
+        if (firstItem) {
+            const firstButton = firstItem.querySelector(".accordion-button");
+            if (firstButton) {
+                firstButton.classList.remove("rounded-lg");
+                firstButton.classList.add("rounded-t-lg", "border-b-0");
+            }
+        }
+
+    </script>
+
 </body>
 
 </html>
